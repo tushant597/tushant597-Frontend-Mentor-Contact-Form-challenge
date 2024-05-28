@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="success" id="success">
+        <div class="div"><img src="/assets/images/icon-success-check.svg" alt="">
+            <h2 class="success-message">Message Sent!</h2>
+        </div>
+
+
+        <p style="color: #fff;">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <form class="container">
+        <h1>Contact Us</h1>
+        <div class="small-container">
+            <div class="">
+                <p class="field-name">First Name <span class="star">*</span></p>
+                <input type="text" class="field fill" id="fname" name="name">
+                <div class="error" id="name-error"></div>
+            </div>
+            <div>
+                <p class="field-name">Last Name <span class="star">*</span></p>
+                <input type="text" class="field fill" id="lname" name="surname">
+                <div class="error" id="surname-error"></div>
+            </div>
+
+        </div>
+
+
+        <div class="section3">
+            <p class="field-name">Email Address <span class="star">*</span></p>
+            <input type="text" class="field3 fill" id="email">
+            <div class="error" id="emailerror"></div>
+        </div>
+
+
+        <p class="field-name name">Query Type <span class="star">*</span></p>
+        <div class="small-container2">
+            <div class="section fill">
+                <input type="radio" class="radio_item" value="" name="item" id="radio1">
+                <label class="label_item" for="radio1"></label><span class="title">General Enquiry</span>
+            </div>
+            <div class="section2 fill">
+                <input type="radio" class="radio_item" value="" name="item" id="radio2">
+                <label class="label_item" for="radio2"></label><span class="title">Support Request</span>
+            </div>
+        </div>
+        <div class="error" id="buttonerror"></div>
+
+        <div class="message-field">
+            <p class="field-name">Message <span class="star">*</span></p>
+            <p class="message fill" contenteditable="true" id="message"></p>
+            <div class="error" id="messageerror"></div>
+        </div>
+
+
+        <label><input type="checkbox" id="checkbox"><span class="label"></span><span class="consent">I consent to being contacted the
+                team.</span><div class="error" id="checkboxerror"></div></label>
+                
+
+        <input type="submit" value="Submit" class="submit fill">
+        </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
