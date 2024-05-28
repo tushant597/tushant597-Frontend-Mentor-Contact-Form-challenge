@@ -189,7 +189,7 @@ h1 {
 }
 
 .radio_item:checked+.label_item {
-    background-image: url(/assets/images/icon-radio-selected.svg);
+    background-image: url(icon-radio-selected.svg);
     background-position: center center;
     border: none;
 }
@@ -252,7 +252,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked+.label {
-    background-image: url(/assets/images/icon-checkbox-check.svg);
+    background-image: url(icon-checkbox-check.svg);
     background-position: center center;
     color: #fff;
     border-color: hsl(187, 24%, 22%);
